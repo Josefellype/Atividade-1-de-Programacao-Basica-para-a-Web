@@ -1,5 +1,5 @@
 body{
-    font-family: "Arial, Helvetica, sans-serif";
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1{
     background-color: #E1EDF2;
@@ -10,11 +10,6 @@ h2 {
 }
 figure {
     text-align: center;
-    align-items: center;
     background-color: whitesmoke;
     color: lightgrey;
-}
-
-figure img {
-    display: inline-block;
 }
