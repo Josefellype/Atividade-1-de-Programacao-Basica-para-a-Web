@@ -3,12 +3,12 @@ body{
     max-width: 940px;
     margin: 0 auto;
 }
-h1{
+.titulo{
     background-color: #E1EDF2;
     color: #3D3D3D;
     padding: 10px;
 }
-h2 {
+.subtitulo {
     border-bottom: 2px solid #000;
 }
 figure {
@@ -24,8 +24,6 @@ figure img{
 }
 .familia-tupfeln{
     width: 275px;
-    margin: 30px 0;
-    text-align: center;
     float: right;
 }
 .FiguraMatriz{
