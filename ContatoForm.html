@@ -1,0 +1,38 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <title>Formulário Contato</title>
+</head>
+<body>
+    <img src="img/logo.svg" alt="Logo MusicDot">
+
+    <h1 class="titulo">Entre em contato</h1>
+
+    <form action="#" method="post">
+        <p>
+            <input type="text" id="nome" name="nome" placeholder="..." required>
+            <label for="nome">Nome</label>
+        </p>
+        
+        <p>
+            <input type="tel" id="fone" name="fone" placeholder="(xx) xxxxx-xxxx" required>
+            <label for="fone">Fone</label>
+        </p>
+
+        <p>
+            <input type="email" id="email" name="email" placeholder="fulano@mail.com" required>
+            <label for="email">Email</label>
+        </p>
+
+        <p>
+            <textarea id="descricao" name="descricao" rows="4" placeholder="Deixe sua opinião" required></textarea>
+            <label for="descricao"></label>
+        </p>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
