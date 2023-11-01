@@ -34,5 +34,38 @@
 
         <button type="submit">Enviar</button>
     </form>
+
+    <script>
+        function validateForm() {
+            var nome = document.getElementById("nome").value;
+            var telefone = document.getElementById("fone").value;
+            var email = document.getElementById("email").value;
+            var opiniao = document.getElementById("descricao").value;
+
+            if (nome.trim() === "" || nome.length < 10) {
+                alert("Nome inválido. Deve ter pelo menos 10 caracteres.");
+                return false;
+            }
+
+            if (telefone.trim() === "" || telefone.length !== 10) {
+                alert("Telefone inválido. Deve conter exatamente 10 dígitos.");
+                return false;
+            }
+
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (email.trim() === "" || !email.match(emailPattern)) {
+                alert("E-mail inválido. Insira um e-mail válido.");
+                return false;
+            }
+
+            if (opiniao.trim() === "" || opiniao.length < 10 || opiniao.length > 50) {
+                alert("Opinião inválida. Deve ter entre 10 e 50 caracteres.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
 </body>
 </html>
